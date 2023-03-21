@@ -12,9 +12,8 @@ namespace PRN221_GroupProject.Models
 
         public int UserId { get; set; }
         public string UserName { get; set; } = null!;
-        public string Password { get; set; } = null!;
-        public string Email { get; set; } = null!;
-        public bool Role { get; set; }
+        public string UserEmail { get; set; } = null!;
+        public string UserPassword { get; set; } = null!;
 
         public virtual ICollection<Order> Orders { get; set; }
     }
