@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ah5YH9+ZotcXTz4LTXNjR/tVCxq02dgJbwlLUxrp2JU=",
+  "Hash": "nq9Bwt9uK2bJ2mN4H3GqwK38wfuWsWbmhzpxti79hso=",
   "Source": "PRN221_GroupProject",
   "BasePath": "_content/PRN221_GroupProject",
   "Mode": "Default",
@@ -289,6 +289,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\aa.png",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/aa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aa.png"
+    },
+    {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\banner_img.png",
       "SourceId": "PRN221_GroupProject",
       "SourceType": "Discovered",
@@ -304,6 +321,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\banner_img.png"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\C#.jpg",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/C#.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\C#.jpg"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\c-programming.png",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/c-programming.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c-programming.png"
     },
     {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\footer_logo.png",
@@ -610,6 +661,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\img9.png"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\java-logo.png",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/java-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\java-logo.png"
     },
     {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\loader.gif",

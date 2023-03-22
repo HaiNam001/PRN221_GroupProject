@@ -22,8 +22,7 @@ namespace PRN221_GroupProject.Models
         public decimal CoursePrice { get; set; }
         [Required(ErrorMessage = "Time can't be empty")]
         public int CourseTime { get; set; }
-        [Required(ErrorMessage = "Image can't be empty")]
-        public string Image { get; set; } = null!;
+        public string Image { get; set; } 
 
         public virtual ICollection<Lesson> Lessons { get; set; }
         public virtual ICollection<MyCourse> MyCourses { get; set; }

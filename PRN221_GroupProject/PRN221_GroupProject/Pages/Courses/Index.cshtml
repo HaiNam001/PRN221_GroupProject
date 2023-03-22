@@ -35,7 +35,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model.Courses) {
-        <tr>
+        <tr >
             <td>
                 @Html.DisplayFor(modelItem => item.CourseId)
             </td>
@@ -52,7 +52,8 @@
                 @Html.DisplayFor(modelItem => item.CourseTime)
             </td>
              <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                @*@Html.DisplayFor(modelItem => item.Image)*@
+                <img src="~/images/@Html.DisplayFor(modelItem => item.Image)" width = "200" height=150>
             </td>
 
             <td>

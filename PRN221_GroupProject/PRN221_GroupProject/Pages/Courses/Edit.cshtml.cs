@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using PRN221_GroupProject.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace PRN221_GroupProject.Pages.Courses
 {
@@ -9,15 +10,20 @@ namespace PRN221_GroupProject.Pages.Courses
     {
         private readonly PRN221Context _context;
         private readonly IConfiguration _configuration;
-        public EditModel(PRN221Context context, IConfiguration configuration)
+        private readonly IWebHostEnvironment _web;
+        public EditModel(PRN221Context context, IConfiguration configuration, IWebHostEnvironment web)
         {
             _context = context;
             _configuration = configuration;
+            _web = web;
         }
 
         [BindProperty]
         public Course Course { get; set; } = default!;
-
+        [BindProperty]
+        [DataType(DataType.Upload)]
+        [Required(ErrorMessage = "need choose a file")]
+        public IFormFile File { get; set; }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null || _context.Courses == null)
@@ -42,6 +48,14 @@ namespace PRN221_GroupProject.Pages.Courses
             {
                 return Page();
             }
+            if (File != null)
+            {
+
+                var path = Path.Combine(_web.WebRootPath, "./images", File.FileName);
+                using var fileStream = new FileStream(path, FileMode.Create);
+                File.CopyTo(fileStream);
+            }
+            Course.Image = File.FileName;
 
             _context.Attach(Course).State = EntityState.Modified;
 

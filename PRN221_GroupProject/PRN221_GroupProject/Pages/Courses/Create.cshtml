@@ -7,7 +7,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form method="post">
+        <form method="post" asp-page="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Course.CourseName" class="control-label"></label>
@@ -29,10 +29,15 @@
                 <input asp-for="Course.CourseTime" class="form-control" />
                 <span asp-validation-for="Course.CourseTime" class="text-danger"></span>
             </div>
-            <div class="form-group">
+           @* <div class="form-group" >
                 <label asp-for="Course.Image" class="control-label"></label>
                 <input asp-for="Course.Image" class="form-control" />
                 <span asp-validation-for="Course.Image" class="text-danger"></span>
+            </div>*@
+            <div>
+                <label asp-for="File" class="control-label"></label>
+                <input asp-for="File" class="form-control" >
+                <span asp-validation-for="File" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -45,5 +50,7 @@
     <a asp-page="Index">Back to List</a>
 </div>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
