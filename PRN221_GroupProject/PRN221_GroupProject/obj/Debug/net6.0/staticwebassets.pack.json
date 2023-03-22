@@ -165,6 +165,10 @@
       "PackagePath": "staticwebassets\\images\\search_icon.png"
     },
     {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\user.jpg",
+      "PackagePath": "staticwebassets\\images\\user.jpg"
+    },
+    {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },

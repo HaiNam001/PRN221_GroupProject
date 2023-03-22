@@ -1,7 +1,12 @@
 ﻿@page
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var username = HttpContextAccessor.HttpContext.Session.GetString("username");
+    var userid = HttpContextAccessor.HttpContext.Session.GetInt32("userid");
 }
 
 <!DOCTYPE html>
@@ -68,14 +73,22 @@
                         <li><a class="nav-link active" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="courses.html">Courses</a></li>
                         <li><a class="nav-link" href="contact.html">Contact us</a></li>
+                        @if (username != null)
+                        {
+                            <div>
+                                <div id="logo" onclick="toggleBox()">
+                                    <img src="~/images/user.jpg" style="width:35px;height:35px;" alt="logo" />
+                                </div>
+                                <div id="box" style="display:none;">
+                                    <ul class="navbar-nav">
+                                        <li><a  class="nav-link" asp-page="./View/MyCourse" asp-route-id="@userid">My Courses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
                     </ul>
                 </div>
-                <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="images/search_icon.png" alt="#" />
-                    </a>
-                </div>
+                
             </div>
         </nav>
     </header>
@@ -85,7 +98,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/banner_img.png);>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -550,11 +563,32 @@
             $this.countTo(options);
           }
         });
+
+        function toggleBox() {
+            var box = document.getElementById("box");
+            if (box.style.display === "none") {
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
     </script>
 </body>
 <style> 
    .container{
     width:100vw;
+    }
+
+    #logo {
+        cursor: pointer;
+    }
+
+    #box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        position:absolute;
+        top:50px;
     }
 </style>
 </html>

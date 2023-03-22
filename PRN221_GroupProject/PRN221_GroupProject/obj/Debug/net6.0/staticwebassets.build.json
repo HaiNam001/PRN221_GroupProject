@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mvVBZ4NzjAI+s1YP68D/BpHVv1qw67MeOxq0NHMKdls=",
+  "Hash": "hq7nzNGNweuKBq7A3Ifj9bxaAU7jbOGPqKRHG12ewUU=",
   "Source": "PRN221_GroupProject",
   "BasePath": "_content/PRN221_GroupProject",
   "Mode": "Default",
@@ -729,6 +729,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\search_icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\user.jpg",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/user.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.jpg"
     },
     {
       "Identity": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\bootstrap.min.js",
