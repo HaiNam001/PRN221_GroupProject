@@ -17,16 +17,19 @@ namespace PRN221_GroupProject.Models
         }
 
         public virtual DbSet<Course> Courses { get; set; } = null!;
-        public virtual DbSet<Order> Orders { get; set; } = null!;
-        public virtual DbSet<OrderDetail> OrderDetails { get; set; } = null!;
+        public virtual DbSet<Lesson> Lessons { get; set; } = null!;
+        public virtual DbSet<MyCourse> MyCourses { get; set; } = null!;
+        public virtual DbSet<Rating> Ratings { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("StringDB"));
-
+            if (!optionsBuilder.IsConfigured)
+            {
+                var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                IConfigurationRoot configuration = builder.Build();
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("StringDB"));
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -50,48 +53,82 @@ namespace PRN221_GroupProject.Models
                     .HasColumnName("coursePrice");
 
                 entity.Property(e => e.CourseTime).HasColumnName("courseTime");
+
+                entity.Property(e => e.Image)
+                    .HasMaxLength(200)
+                    .HasColumnName("image");
             });
 
-            modelBuilder.Entity<Order>(entity =>
+            modelBuilder.Entity<Lesson>(entity =>
             {
-                entity.Property(e => e.OrderId).HasColumnName("orderId");
+                entity.ToTable("Lesson");
 
-                entity.Property(e => e.OrderDate)
-                    .HasColumnType("datetime")
-                    .HasColumnName("orderDate");
+                entity.Property(e => e.LessonId).HasColumnName("lessonId");
 
-                entity.Property(e => e.TotalPrice)
-                    .HasColumnType("money")
-                    .HasColumnName("totalPrice");
-
-                entity.Property(e => e.UserId).HasColumnName("userId");
-
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.Orders)
-                    .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Orders_Users");
-            });
-
-            modelBuilder.Entity<OrderDetail>(entity =>
-            {
-                entity.Property(e => e.OrderDetailId).HasColumnName("order_detail_Id");
+                entity.Property(e => e.Content)
+                    .HasMaxLength(100)
+                    .HasColumnName("content");
 
                 entity.Property(e => e.CourseId).HasColumnName("courseId");
 
-                entity.Property(e => e.OrderId).HasColumnName("orderId");
-
                 entity.HasOne(d => d.Course)
-                    .WithMany(p => p.OrderDetails)
+                    .WithMany(p => p.Lessons)
                     .HasForeignKey(d => d.CourseId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_OrderDetails_Courses");
+                    .HasConstraintName("FK_Lesson_Courses");
+            });
 
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.OrderDetails)
-                    .HasForeignKey(d => d.OrderId)
+            modelBuilder.Entity<MyCourse>(entity =>
+            {
+                entity.ToTable("MyCourse");
+
+                entity.Property(e => e.MycourseId).HasColumnName("mycourseId");
+
+                entity.Property(e => e.CourseId).HasColumnName("courseId");
+
+                entity.Property(e => e.UserId).HasColumnName("userId");
+
+                entity.HasOne(d => d.Course)
+                    .WithMany(p => p.MyCourses)
+                    .HasForeignKey(d => d.CourseId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_OrderDetails_Orders");
+                    .HasConstraintName("FK_MyCourse_Courses");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.MyCourses)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_MyCourse_Users");
+            });
+
+            modelBuilder.Entity<Rating>(entity =>
+            {
+                entity.HasKey(e => e.RateId);
+
+                entity.ToTable("Rating");
+
+                entity.Property(e => e.RateId).HasColumnName("rateId");
+
+                entity.Property(e => e.Comment)
+                    .HasMaxLength(200)
+                    .HasColumnName("comment")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CourseId).HasColumnName("courseId");
+
+                entity.Property(e => e.UserId).HasColumnName("userId");
+
+                entity.HasOne(d => d.Course)
+                    .WithMany(p => p.Ratings)
+                    .HasForeignKey(d => d.CourseId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Rating_Courses");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Ratings)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Rating_Users");
             });
 
             modelBuilder.Entity<User>(entity =>
