@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\css\\magnific-popup.css"
     },

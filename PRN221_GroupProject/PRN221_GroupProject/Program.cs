@@ -1,8 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using PRN221_GroupProject.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddDbContext<PRN221Context>(opt => opt.UseSqlServer(configuration.GetConnectionString("StringDB")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
