@@ -7,7 +7,8 @@ namespace PRN221_GroupProject.Models
     {
         public User()
         {
-            Orders = new HashSet<Order>();
+            MyCourses = new HashSet<MyCourse>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int UserId { get; set; }
@@ -15,6 +16,7 @@ namespace PRN221_GroupProject.Models
         public string UserEmail { get; set; } = null!;
         public string UserPassword { get; set; } = null!;
 
-        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<MyCourse> MyCourses { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }

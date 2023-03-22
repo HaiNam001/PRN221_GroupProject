@@ -5,16 +5,228 @@
       "PackagePath": "staticwebassets\\PRN221_GroupProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\flashy.min.css",
+      "PackagePath": "staticwebassets\\css\\flashy.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\pogo-slider.min.css",
+      "PackagePath": "staticwebassets\\css\\pogo-slider.min.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\responsiveslides.css",
+      "PackagePath": "staticwebassets\\css\\responsiveslides.css"
+    },
+    {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\timeline.css",
+      "PackagePath": "staticwebassets\\css\\timeline.css"
     },
     {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\banner_img.png",
+      "PackagePath": "staticwebassets\\images\\banner_img.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\footer_logo.png",
+      "PackagePath": "staticwebassets\\images\\footer_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\heading_main_border.png",
+      "PackagePath": "staticwebassets\\images\\heading_main_border.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i1.png",
+      "PackagePath": "staticwebassets\\images\\i1.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i2.png",
+      "PackagePath": "staticwebassets\\images\\i2.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i3.png",
+      "PackagePath": "staticwebassets\\images\\i3.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i4.png",
+      "PackagePath": "staticwebassets\\images\\i4.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i5.png",
+      "PackagePath": "staticwebassets\\images\\i5.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i6.png",
+      "PackagePath": "staticwebassets\\images\\i6.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i7.png",
+      "PackagePath": "staticwebassets\\images\\i7.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i8.png",
+      "PackagePath": "staticwebassets\\images\\i8.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\icon 6 png.png",
+      "PackagePath": "staticwebassets\\images\\icon 6 png.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\icon 7.png",
+      "PackagePath": "staticwebassets\\images\\icon 7.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img10.png",
+      "PackagePath": "staticwebassets\\images\\img10.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img2.png",
+      "PackagePath": "staticwebassets\\images\\img2.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img6.png",
+      "PackagePath": "staticwebassets\\images\\img6.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img7.png",
+      "PackagePath": "staticwebassets\\images\\img7.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img8.png",
+      "PackagePath": "staticwebassets\\images\\img8.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\img9.png",
+      "PackagePath": "staticwebassets\\images\\img9.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\loader.gif",
+      "PackagePath": "staticwebassets\\images\\loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\p1.png",
+      "PackagePath": "staticwebassets\\images\\p1.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\p2.png",
+      "PackagePath": "staticwebassets\\images\\p2.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\p3.png",
+      "PackagePath": "staticwebassets\\images\\p3.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\search_icon.png",
+      "PackagePath": "staticwebassets\\images\\search_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\contact-form-script.js",
+      "PackagePath": "staticwebassets\\js\\contact-form-script.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\form-validator.min.js",
+      "PackagePath": "staticwebassets\\js\\form-validator.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\images-loded.min.js",
+      "PackagePath": "staticwebassets\\js\\images-loded.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\jquery-1.11.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.11.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\jquery-1.12.4.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.12.4.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\jquery.pogo-slider.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.pogo-slider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\responsiveslides.min.js",
+      "PackagePath": "staticwebassets\\js\\responsiveslides.min.js"
+    },
+    {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\slider-index.js",
+      "PackagePath": "staticwebassets\\js\\slider-index.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\smoothscroll.js",
+      "PackagePath": "staticwebassets\\js\\smoothscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\timeLine.min.js",
+      "PackagePath": "staticwebassets\\js\\timeLine.min.js"
     },
     {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",

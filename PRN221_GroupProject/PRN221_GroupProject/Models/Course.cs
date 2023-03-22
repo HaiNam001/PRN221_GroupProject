@@ -7,7 +7,9 @@ namespace PRN221_GroupProject.Models
     {
         public Course()
         {
-            OrderDetails = new HashSet<OrderDetail>();
+            Lessons = new HashSet<Lesson>();
+            MyCourses = new HashSet<MyCourse>();
+            Ratings = new HashSet<Rating>();
         }
 
         public int CourseId { get; set; }
@@ -15,7 +17,10 @@ namespace PRN221_GroupProject.Models
         public string CourseDescription { get; set; } = null!;
         public decimal CoursePrice { get; set; }
         public int CourseTime { get; set; }
+        public string Image { get; set; } = null!;
 
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<Lesson> Lessons { get; set; }
+        public virtual ICollection<MyCourse> MyCourses { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }
