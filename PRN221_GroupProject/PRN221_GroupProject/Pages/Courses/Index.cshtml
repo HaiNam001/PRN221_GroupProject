@@ -1,0 +1,66 @@
+﻿@page
+@model PRN221_GroupProject.Pages.Courses.IndexModel
+@{
+}
+
+<h1>Courses Management</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>    
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseDescription)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CoursePrice)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseTime)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Courses) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CourseDescription)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CoursePrice)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CourseTime)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CourseId">Edit</a> |
+                <a asp-page="./Detail" asp-route-id="@item.CourseId">Detail</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CourseId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
