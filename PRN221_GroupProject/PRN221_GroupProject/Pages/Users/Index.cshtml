@@ -1,0 +1,51 @@
+﻿@page
+@model PRN221_GroupProject.Pages.Users.IndexModel
+@{
+}
+<h1>User Management</h1>
+
+  
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Users[0].UserEmail)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Users[0].UserPassword)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Users) {
+        <tr >
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.UserEmail)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.UserPassword)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.UserId">Edit</a> |
+                <a asp-page="./Detail" asp-route-id="@item.UserId">Detail</a> |
+                <a asp-page="./Delete" asp-route-id="@item.UserId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
