@@ -6,3 +6,11 @@ PRN221_GroupProject/.vs/PRN221_GroupProject/DesignTimeBuild/.dtbcache.v2
 PRN221_GroupProject/.vs/PRN221_GroupProject/v17/.suo
 *.v2
 *.2
+*.v2
+PRN221_GroupProject/.vs/PRN221_GroupProject/v17/.suo
+*.dll
+*.json
+*.cache
+*.editorconfig
+*.pdb
+*.props
