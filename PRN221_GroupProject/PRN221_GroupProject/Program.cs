@@ -18,7 +18,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<PRN221Context>(opt => opt.UseSqlServer(configuration.GetConnectionString("StringDB")));
+//builder.Services.AddDbContext<PRN221Context>(opt => opt.UseSqlServer(configuration.GetConnectionString("StringDB")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
