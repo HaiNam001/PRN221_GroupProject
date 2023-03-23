@@ -1,0 +1,142 @@
+﻿@page
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model PRN221_GroupProject.Pages.View.MyCourseModel
+@{
+    var endpage = HttpContextAccessor.HttpContext.Session.GetInt32("endpage");
+}
+<link rel="stylesheet" href="~/css/style.css" />
+
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    <!-- end loader -->
+    <!-- END LOADER -->
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1>Code Plant</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" asp-page="./Index">Home</a></li>
+                        <li><a class="nav-link" asp-page="./Course" >Courses</a></li>
+                        <li><a class="nav-link" asp-page="./Contact">Contact us</a></li>
+
+                        <div>
+                            <div id="logo" onclick="toggleBox()">
+                                <img src="~/images/user.jpg" style="width:35px;height:35px;" alt="logo" />
+                            </div>
+                            <div id="box" style="display:none;">
+                                <ul class="navbar-nav">
+                                    <li><a class="nav-link" asp-page="./View/MyCourse">My Courses</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                            <h2><span>My </span>Courses</h2>
+                        </div>
+                    </div>
+                </div>
+                @foreach (var item in Model.MyCourse )
+                {                                  
+                <div class="col-md-4">
+                    <div class="full blog_img_popular">
+                        <img class="img-responsive" src="/images/p1.png" alt="#" />
+                        <h4>@item.Course.CourseName</h4>
+                    </div>
+                </div>
+                }
+                <ul style="margin: 0 auto;" class="pagination">
+                    @for(int i = 1;i <= endpage;i++){
+                    <li class="page-item">
+                            <a href="./View/MyCourse"  class="page-link">@i</a>
+                    </li>         
+                    }
+                </ul>
+
+            </div>
+        </div>
+    </div>
+<footer class="footer-box">
+    <div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="footer_blog">
+                    <div class="full margin-bottom_30">
+                        <img src="images/footer_logo.png" alt="#" />
+                    </div>
+                    <div class="full white_fonts">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="footer_blog footer_menu white_fonts">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="#">> Join Us</a></li>
+                        <li><a href="#">> Maintenance</a></li>
+                        <li><a href="#">> Language Packs</a></li>
+                        <li><a href="#">> LearnPress</a></li>
+                        <li><a href="#">> Release Status</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="footer_blog full white_fonts">
+                    <h3>Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <div class="newsletter_form">
+                        <form action="index.html">
+                            <input type="email" placeholder="Your Email" name="#" required />
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                <div class="footer_blog full white_fonts">
+                    <h3>Contact us</h3>
+                    <ul class="full">
+                        <li><img src="images/i5.png"><span>London 145<br>United Kingdom</span></li>
+                        <li><img src="images/i6.png"><span>demo@gmail.com</span></li>
+                        <li><img src="images/i7.png"><span>+12586954775</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+</body>
+<style>
+    .container{
+        width: 100vw;
+    }
+</style>

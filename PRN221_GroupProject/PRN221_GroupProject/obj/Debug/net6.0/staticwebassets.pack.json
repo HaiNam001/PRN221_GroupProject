@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\css\\magnific-popup.css"
     },
@@ -159,6 +163,10 @@
     {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\search_icon.png",
       "PackagePath": "staticwebassets\\images\\search_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\user.jpg",
+      "PackagePath": "staticwebassets\\images\\user.jpg"
     },
     {
       "Id": "C:\\Users\\dell\\Documents\\GitHub\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\js\\bootstrap.min.js",
