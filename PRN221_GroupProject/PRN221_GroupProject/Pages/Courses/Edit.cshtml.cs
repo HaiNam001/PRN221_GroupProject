@@ -22,7 +22,6 @@ namespace PRN221_GroupProject.Pages.Courses
         public Course Course { get; set; } = default!;
         [BindProperty]
         [DataType(DataType.Upload)]
-        [Required(ErrorMessage = "need choose a file")]
         public IFormFile File { get; set; }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -44,18 +43,15 @@ namespace PRN221_GroupProject.Pages.Courses
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+           
             if (File != null)
             {
 
                 var path = Path.Combine(_web.WebRootPath, "./images", File.FileName);
                 using var fileStream = new FileStream(path, FileMode.Create);
                 File.CopyTo(fileStream);
+                Course.Image = File.FileName;
             }
-            Course.Image = File.FileName;
 
             _context.Attach(Course).State = EntityState.Modified;
 

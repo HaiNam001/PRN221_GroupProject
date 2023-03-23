@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nq9Bwt9uK2bJ2mN4H3GqwK38wfuWsWbmhzpxti79hso=",
+  "Hash": "42yiwKmePh6hSKjrjb/YBzkONw6VOR/vb6DJ3vqE1jA=",
   "Source": "PRN221_GroupProject",
   "BasePath": "_content/PRN221_GroupProject",
   "Mode": "Default",
@@ -389,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\heading_main_border.png"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\Home.png",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/Home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Home.png"
     },
     {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\i1.png",

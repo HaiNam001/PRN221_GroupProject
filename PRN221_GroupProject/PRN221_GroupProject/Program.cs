@@ -1,13 +1,15 @@
+using EntityFrameworkCore.UseRowNumberForPaging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using PRN221_GroupProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-//var connectionString = builder.Configuration.GetConnectionString("StringDB");
-//builder.Services.AddDbContext<PRN221Context>(op =>
-//op.UseSqlServer(connectionString));
+var connectionString = builder.Configuration.GetConnectionString("StringDB");
+builder.Services.AddDbContext<PRN221Context>(op =>
+op.UseSqlServer(connectionString).ReplaceService<IQueryTranslationPostprocessorFactory, SqlServer2008QueryTranslationPostprocessorFactory>());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

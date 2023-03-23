@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "EntityFrameworkCore.UseRowNumberForPaging/0.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/EntityFrameworkCore.UseRowNumberForPaging.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/EntityFrameworkCore.UseRowNumberForPaging.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -3159,6 +3172,20 @@
     }
   },
   "libraries": {
+    "EntityFrameworkCore.UseRowNumberForPaging/0.4.0": {
+      "sha512": "FiwZtELUgq9834/Sfbkn6Rf+2HuebdyTpkrz61+aRfk6i1Ltih9/5TLZQ6x/4jOi4/eLuP+hcPoT1WDyiXCEYg==",
+      "type": "package",
+      "path": "entityframeworkcore.userownumberforpaging/0.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "entityframeworkcore.userownumberforpaging.0.4.0.nupkg.sha512",
+        "entityframeworkcore.userownumberforpaging.nuspec",
+        "lib/net6.0/EntityFrameworkCore.UseRowNumberForPaging.dll",
+        "lib/net7.0/EntityFrameworkCore.UseRowNumberForPaging.dll"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -9696,6 +9723,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "EntityFrameworkCore.UseRowNumberForPaging >= 0.4.0",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
@@ -9743,6 +9771,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "EntityFrameworkCore.UseRowNumberForPaging": {
+            "target": "Package",
+            "version": "[0.4.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.9, )"

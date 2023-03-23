@@ -49,3 +49,22 @@
 }
     </tbody>
 </table>
+@{
+    var pre = !Model.Users.HasPreviousPage ? "disabled" : "";
+    var next = !Model.Users.HasNextPage ? "disabled" : "";
+
+}
+@*<a asp-page= "Index" 
+   asp-route-pageIndex="@(Model.Users.PageIndex - 1)"
+   class="btn btn-primary @pre">
+   Previous
+</a>
+<a asp-page= "Index" 
+   asp-route-pageIndex="@(Model.Users.PageIndex + 1)"
+   class="btn btn-primary @next" >
+   Next
+</a>*@
+<a asp-page= "Index" asp-route-pageIndex="@(Model.Users.PageIndex - 1)"
+class="btn btn-primary @pre">Previous</a>
+<a asp-page= "Index" asp-route-pageIndex="@(Model.Users.PageIndex + 1)"
+class="btn btn-primary @next">Next</a>

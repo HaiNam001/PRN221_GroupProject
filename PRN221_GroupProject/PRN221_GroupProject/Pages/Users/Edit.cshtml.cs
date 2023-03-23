@@ -38,10 +38,7 @@ namespace PRN221_GroupProject.Pages.Users
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+           
            
             _context.Attach(Users).State = EntityState.Modified;
 

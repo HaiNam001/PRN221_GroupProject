@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "PRN221_GroupProject/1.0.0": {
         "dependencies": {
+          "EntityFrameworkCore.UseRowNumberForPaging": "0.4.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.Design": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
@@ -17,6 +18,18 @@
         },
         "runtime": {
           "PRN221_GroupProject.dll": {}
+        }
+      },
+      "EntityFrameworkCore.UseRowNumberForPaging/0.4.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+        },
+        "runtime": {
+          "lib/net6.0/EntityFrameworkCore.UseRowNumberForPaging.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2268,6 +2281,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFrameworkCore.UseRowNumberForPaging/0.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FiwZtELUgq9834/Sfbkn6Rf+2HuebdyTpkrz61+aRfk6i1Ltih9/5TLZQ6x/4jOi4/eLuP+hcPoT1WDyiXCEYg==",
+      "path": "entityframeworkcore.userownumberforpaging/0.4.0",
+      "hashPath": "entityframeworkcore.userownumberforpaging.0.4.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

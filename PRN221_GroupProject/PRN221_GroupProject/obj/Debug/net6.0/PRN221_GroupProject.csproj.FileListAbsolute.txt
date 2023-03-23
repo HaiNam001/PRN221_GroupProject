@@ -327,3 +327,4 @@ E:\Desktop\PRN221_GroupProject\PRN221_GroupProject\PRN221_GroupProject\obj\Debug
 E:\Desktop\PRN221_GroupProject\PRN221_GroupProject\PRN221_GroupProject\obj\Debug\net6.0\PRN221_GroupProject.pdb
 E:\Desktop\PRN221_GroupProject\PRN221_GroupProject\PRN221_GroupProject\obj\Debug\net6.0\PRN221_GroupProject.genruntimeconfig.cache
 E:\Desktop\PRN221_GroupProject\PRN221_GroupProject\PRN221_GroupProject\obj\Debug\net6.0\ref\PRN221_GroupProject.dll
+E:\Desktop\PRN221_GroupProject\PRN221_GroupProject\PRN221_GroupProject\bin\Debug\net6.0\EntityFrameworkCore.UseRowNumberForPaging.dll
