@@ -1,0 +1,62 @@
+﻿@page
+@model PRN221_GroupProject.Pages.Lessons.IndexModel
+@{
+}
+
+<h1>Courses Management</h1>
+
+ 
+
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseDescription)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CoursePrice)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].CourseTime)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Courses[0].Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Courses) {
+        <tr >
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CourseDescription)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CoursePrice)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.CourseTime)
+            </td>
+             <td>
+                <img src="~/images/@Html.DisplayFor(modelItem => item.Image)" width = "200" height=150>
+            </td>
+
+            <td>
+                <a asp-page="./LessonDetail" asp-route-id="@item.CourseId">Detail</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

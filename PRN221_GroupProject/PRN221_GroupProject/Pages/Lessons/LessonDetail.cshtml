@@ -1,0 +1,14 @@
+﻿@page
+@model PRN221_GroupProject.Pages.Lessons.LessonDetailModel
+@{
+}
+
+<h1>Learning programing @Model.Course.CourseName</h1>
+<p>@Model.Course.CourseDescription</p>
+<h3>Content</h3>
+<p>Time to complete: @Model.Course.CourseTime hours - Total Lesson: @Model.Lesson.Count</p>
+@foreach (var item in @Model.Lesson)
+{
+    <li>Lesson :  @Html.DisplayFor(modelItem  => item.Content)</li>
+    
+}
