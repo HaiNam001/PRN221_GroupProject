@@ -15,15 +15,16 @@ namespace PRN221_GroupProject.Pages.Users
             _context = context;
             _configuration = configuration;
         }
-        public PaginatedList<User> Users { get; set; }
+        public List<User> Users { get; set; }
 
         public async Task OnGetAsync(int? pageNum)
         {
-            IQueryable<User> user = from s in _context.Users
-                                    select s;
-            var pageSize = _configuration.GetValue("PageSize", 3);
+            Users = _context.Users.ToList();
+            //IQueryable<User> user = from s in _context.Users
+            //                        select s;
+            //var pageSize = _configuration.GetValue("PageSize", 3);
 
-            Users = await PaginatedList<User>.CreateAsync(user.AsNoTracking(), pageNum ?? 1, pageSize);
+            //Users = await PaginatedList<User>.CreateAsync(user.AsNoTracking(), pageNum ?? 1, pageSize);
         }
 
     }
