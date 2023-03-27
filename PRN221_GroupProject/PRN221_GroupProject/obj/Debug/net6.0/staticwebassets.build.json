@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jxFV2eHnuTVyiyGWAuTTUfvszxW1kZmUtks5aiCpicI=",
+  "Hash": "IwD24EiibAnbAq3Iodr6JY3zlQQlI86QN1E+jysYQSQ=",
   "Source": "PRN221_GroupProject",
   "BasePath": "_content/PRN221_GroupProject",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\DetailCourse.css",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "css/DetailCourse.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DetailCourse.css"
     },
     {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\css\\flashy.min.css",
@@ -712,6 +729,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\p3.png"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\SE1622_ChuVanLuan.mp3",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "images/SE1622_ChuVanLuan.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\SE1622_ChuVanLuan.mp3"
     },
     {
       "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\images\\search_icon.png",
@@ -2004,6 +2038,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\videos\\SE1622_ChuVanLuan.mp3",
+      "SourceId": "PRN221_GroupProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Desktop\\PRN221_GroupProject\\PRN221_GroupProject\\PRN221_GroupProject\\wwwroot\\",
+      "BasePath": "_content/PRN221_GroupProject",
+      "RelativePath": "videos/SE1622_ChuVanLuan.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\videos\\SE1622_ChuVanLuan.mp3"
     }
   ]
 }

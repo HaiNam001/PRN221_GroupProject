@@ -3,12 +3,195 @@
 @{
 }
 
-<h1>Learning programing @Model.Course.CourseName</h1>
-<p>@Model.Course.CourseDescription</p>
-<h3>Content</h3>
-<p>Time to complete: @Model.Course.CourseTime hours - Total Lesson: @Model.Lesson.Count</p>
-@foreach (var item in @Model.Lesson)
-{
+
+
+@*<p>@Model.Course.CourseDescription</p>
+    <h3>Content</h3>
+    <p>Time to complete: @Model.Course.CourseTime hours - Total Lesson: @Model.Lesson.Count</p>
+    @foreach (var item in @Model.Lesson)
+    {
     <li>Lesson :  @Html.DisplayFor(modelItem  => item.Content)</li>
-    
+    }*@
+<div class="App_withSidebar__8lwIi">
+    <div class="App_withSidebarContent__o4VlQ">
+        <section class="index-module_grid__1q71E index-module_fullWidth__3X-6x" style="max-width: 1920px;">
+            <section class="index-module_row__-AHgh CourseDetail_wrapper__myy9O"></section>
+            <section class="index-module_col__2EQm9 index-module_c-12__u7UXF index-module_m-12__2CxUL index-module_l-8__yebHm">
+                <h1 class="CourseDetail_courseName__g37pH">Learning programing @Model.Course.CourseName</h1>
+                <div class="CourseDetail_textContent__Y2-aV">@Model.Course.CourseDescription</div>
+                <div class="CurriculumOfCourse_curriculumOfCourse__8Z1rQ">
+                    <h3 class="CurriculumOfCourse_floatLeft__zxBeB">Content</h3>
+                    <div class="CurriculumOfCourse_subHeadWrapper__Hkcns">
+                        <ul>
+                             <li>Time to complete: @Model.Course.CourseTime hours</li>
+                        <li class="CurriculumOfCourse_dot__lIoF- CurriculumOfCourse_hiddenMobile__iP-4s">•</li>
+                        <li>Total Lesson: @Model.Lesson.Count</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="CurriculumOfCourse_curriculumPanel__nHTcj">
+                <div class="CurriculumOfCourse_panelGroup__qG1sx">
+                    <div>
+                        <div class="  CurriculumOfCourse_panel__QT1YG">
+                            @foreach (var item in @Model.Lesson)
+                            {
+                                <div class="CurriculumOfCourse_panelHeading__eln5T">
+                                    <a asp-page="./LearnCourse" asp-route-id="@item.CourseId">Lesson: @Html.DisplayFor(modelItem => item.Content)</a>
+                                    
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<style>
+    body {
+    font-family: var(--system-ui);
+     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
+.CurriculumOfCourse_curriculumPanel__nHTcj {
+    margin: 12px 0 48px;
+}
+    .App_withSidebar__8lwIi{
+        display: flex;
+    min-height: 100vh;
+    }
+   .CurriculumOfCourse_panelHeading__eln5T {
+    background: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 147px;
+    z-index: 1;
+}
+    div {
+    display: block;
+}
+.App_withSidebarContent__o4VlQ:not(.App_hidden__PlKoC) {
+    max-width: 100%;
+    padding: 0 32px;
+}
+.App_withSidebarContent__o4VlQ {
+    flex: 1 1;
+    max-width: 100%;
+}
+element.style {
+    max-width: 1920px;
+}
+.index-module_fullWidth__3X-6x {
+    width: 100%;
+}
+.index-module_grid__1q71E {
+    padding: 0;
+    margin: 0 auto;
+}
+.CourseDetail_wrapper__myy9O {
+    margin-top: 24px;
+    padding: 0 44px 68px;
+}
+.index-module_row__-AHgh {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.index-module_c-12__u7UXF {
+    width: 100%;
+}
+.index-module_col__2EQm9 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.CourseDetail_courseName__g37pH {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 16px;
+    min-height: 33px;
+}
+.CourseDetail_textContent__Y2-aV {
+    color: rgba(0,0,0,.8);
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.CurriculumOfCourse_headerSticky__sUlkH {
+    background-color: #fff;
+    padding-bottom: 4px;
+    position: sticky;
+    top: 66px;
+    z-index: 2;
+}
+.CurriculumOfCourse_curriculumOfCourse__8Z1rQ h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.CurriculumOfCourse_floatLeft__zxBeB {
+    float: left;
+}
+.CurriculumOfCourse_subHeadWrapper__Hkcns {
+    display: flex;
+    font-size: 1.4rem;
+    margin-top: 4px;
+}
+.CurriculumOfCourse_subHeadWrapper__Hkcns li {
+    display: inline-block;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: none;
+}
+.CurriculumOfCourse_subHeadWrapper__Hkcns .CurriculumOfCourse_dot__lIoF- {
+    font-size: 1.4rem;
+    margin-top: 1px;
+    opacity: .8;
+    padding: 0 8px;
+}
+.CurriculumOfCourse_curriculumPanel__nHTcj {
+    margin: 12px 0 48px;
+}
+.CurriculumOfCourse_curriculumOfCourse__8Z1rQ h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.CurriculumOfCourse_floatLeft__zxBeB {
+    float: left;
+}
+.CurriculumOfCourse_panelGroup__qG1sx .CurriculumOfCourse_panel__QT1YG {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.CurriculumOfCourse_curriculumPanel__nHTcj {
+    margin: 12px 0 48px;
+}
+
+
+.CurriculumOfCourse_panelHeading__eln5T {
+    background: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 147px;
+    z-index: 1;
+}
+</style>
