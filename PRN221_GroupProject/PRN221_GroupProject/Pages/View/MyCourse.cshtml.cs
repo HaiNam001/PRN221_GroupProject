@@ -8,38 +8,21 @@ namespace PRN221_GroupProject.Pages.View
     public class MyCourseModel : PageModel
     {
         private readonly PRN221Context _context;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public MyCourseModel(PRN221Context context, IHttpContextAccessor httpContextAccessor)
+        private readonly IConfiguration _configuration;
+        public MyCourseModel(PRN221Context context, IConfiguration configuration)
         {
             _context = context;
-            _httpContextAccessor = httpContextAccessor;
+            _configuration = configuration;
         }
-        [BindProperty]
-        public List<MyCourse> MyCourse { get; set; }
-        public IActionResult OnGet(int id,int index)
+        // public User User { get; set; }
+        public List<Rating> Rating { get; set; }
+
+
+        public void OnGet()
         {
-            var session = _httpContextAccessor.HttpContext.Session;
-            if (id == 0)
-            {
-                return NotFound();
-            }
-
-            if (index == 0)
-            {
-                index = 1;
-            }
-            MyCourse = _context.MyCourses.Include(x => x.Course).Where(x => x.UserId == id).Skip((index-1)*3).Take(3).ToList();
-            int totalMyCourse = _context.MyCourses.Where(x=>x.UserId== id).Count();
-            int endpage = totalMyCourse/3;
-            if(totalMyCourse % 3!=0)
-            {
-                endpage++;
-            }
-            session.SetInt32("endpage", endpage);
-            return Page();
+            Rating = _context.Ratings.Include(o => o.User).Include(o => o.Course).ToList();
         }
 
-     
+
     }
 }
